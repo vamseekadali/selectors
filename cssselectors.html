@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>css selectors</title>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <!--this is internal styling-->
+            <style>
+                /*this is universal selector*/
+                *{background: rgb(49,82,180);background: linear-gradient(313deg,
+                 rgba(49,82,180,1) 50%, rgba(236,236,236,1) 100%);
+                 margin:0px;
+                    font-family:'Courier New', Courier, monospace;
+                }
+                /*this is a type selector*/
+             p{
+                 text-align:center;
+                 color:black;
+                background:rgb(114, 91, 101);
+                }
+                /*this is class selector*/
+                .united{
+                    font-size:20px;
+                    background:orange;
+                    margin:5px;
+                }
+                /*this is id selector*/
+                #state{
+                    color:palevioletred;
+                    background:palegoldenrod;
+                }
+                .cls1{
+                    margin:5px;
+                    color:violet;
+                    background:purple;
+                }
+                #show{
+                    margin:20px;
+                    background:black;
+                }
+
+            </style>
+    </head>
+    <body>
+        <h1 align="center">css selectors</h1>
+        <label>type selector</label>
+        <p>here the style applying based on the tag,the sytle apply upto the tags only</p>
+        <p>the sytax for type selector:p{poperty:value;}</p>
+        <div>the universal selector selects all the elements on the page.
+            the sytax for the universal selector:*{property:value;}
+        </div>
+            <div class="united"><label>class selector</label>
+            The class selector selects HTML elements with a specific class attribute.
+            To select elements with a specific class, write a period (.) character, followed by the class name.
+            syntax:  .class{poperty:value;}
+         </div>
+             <div class="united">In this example all HTML elements with class="united" will be red and center-aligned: 
+
+                <pre>.united {
+                             text-align: center;
+                             color: red;
+                             }
+             </pre>
+        </div>
+        <div class="united">
+            In this example only  elements with class="united" will be red and center-aligned: 
+                <pre>
+                .united {
+                         text-align: center;
+                        color: red;
+                    }
+                </pre>
+        </div>
+        <div id="state"><label>id selectors:</label>
+            The id selector uses the id attribute of an HTML element to select a specific element.
+
+            The id of an element is unique within a page, so the id selector is used to select one unique element!
+            
+            To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+        </div>
+        <div>
+            here ,it shows the result when we are using both <strong>class</strong> and <strong> id</strong> selectors in the same tag.
+        </div>
+        <div class="cls1"><label>step1</label>
+            here ,it shows the result when we are using <strong>class</strong> and <strong> id</strong> selectors.</div>
+        <div id="show"><label>step2</label>here ,it shows the result when we are using <strong>class</strong> and <strong> id</strong> selectors.</div>
+        <div class="cls1" id="show"><label>step3</label>here ,it shows the result when we are using <strong>class</strong> and <strong> id</strong> selectors.</div>
+        <div id="show" class="cls1"> <label>step4</label>here ,it shows the result when we are using <strong>class</strong> and <strong> id</strong> selectors.</div>
+        <div>here ,it shows the result when we are using <strong>class</strong> and <strong> id</strong> selectors.</div>
+        <label>
+            descendent selector:
+        </label>
+        <div>
+            <p>it is descendent selector</p>
+                <div>
+                    <p>it is descendent selecor</p>
+                </div>
+        </div>
+    </body>
+</html>
